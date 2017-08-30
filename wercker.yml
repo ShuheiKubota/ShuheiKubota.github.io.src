@@ -15,6 +15,7 @@ build:
       channel: $SLACK_CHANNEL
       url: $SLACK_URL
       username: wercker_build
+      notify_on: failed
 
 deploy:
   steps:
