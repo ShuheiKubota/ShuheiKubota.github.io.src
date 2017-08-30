@@ -5,13 +5,13 @@ title = "作ったものとか"
 hascjklanguage = true
 
 theme = "beg"
+googleAnalytics = "UA-105605213-1"
 
 [taxonomies]
   #tag = "tags"
   #category = "categories"
 
 [params]
-  AnalyticsID = "Your Google Analytics tracking code"
   Summary = true  # takes true or false
   Content = true  # takes true or false
   # if both are set to true, summary is shown.
