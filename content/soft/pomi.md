@@ -21,7 +21,7 @@ pomi は、この同期に使われる情報をもとにパソコンにテキス
 
 具体的な挙動は下の動画を参照していただくと理解しやすいと思います。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ijBhG64XMMI" frameborder="0" allowfullscreen></iframe>
+{{< youtube ijBhG64XMMI >}}
 
 # 使い方…の前にフロントエンドのご紹介
 

@@ -9,7 +9,7 @@ date: 2017-08-27T20:56:53+09:00
 
 <!--more-->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/i6QdyUeWey0" frameborder="0" allowfullscreen></iframe>
+{{< youtube i6QdyUeWey0 >}}
 
 ## 紹介
 
@@ -17,7 +17,8 @@ date: 2017-08-27T20:56:53+09:00
 
 とりあえず、下のスクリーンショットを見てください。
 
-![](glass_1.png)
+{{< figure src="glass_1.png" >}}
+
 このスクリーンショットは、「メモ」というタイトルのウィンドウが常に見えるように、他のウィンドウを透過しているところです。
 
 左上に写っているコマンド「glass watch メモ」により、指定したウィンドウを隠すようなウィンドウが自動的に透過されます。
@@ -114,7 +115,7 @@ glass.exe のショートカットを作っておきます。
 
 Warning: 終了する場合は、あくまでも Ctrl+C です。コマンドプロンプトの×で閉じた場合は透過が元に戻りませんので「glass recover」が必要になります。
 
-![](glass_2.png)
+{{< figure src="glass_2.png" title="glass.exe のショートカットにおｐションを指定した例" >}}
 glass.exe のショートカットを作成し、その「リンク先」を編集しているところです。glass.exeの後ろに(スペースに続いて)「watch youtube -a 30」を指定しています。
 これで、あとは YouTube 動画を全画面にしておけば、動画を見ながらの作業が捗りますね。
 
