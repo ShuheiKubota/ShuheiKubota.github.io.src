@@ -115,7 +115,7 @@ glass.exe のショートカットを作っておきます。
 
 Warning: 終了する場合は、あくまでも Ctrl+C です。コマンドプロンプトの×で閉じた場合は透過が元に戻りませんので「glass recover」が必要になります。
 
-{{< figure src="glass_2.png" title="glass.exe のショートカットにおｐションを指定した例" >}}
+{{< figure src="glass_2.png" title="glass.exe のショートカットにオプションを指定した例" >}}
 glass.exe のショートカットを作成し、その「リンク先」を編集しているところです。glass.exeの後ろに(スペースに続いて)「watch youtube -a 30」を指定しています。
 これで、あとは YouTube 動画を全画面にしておけば、動画を見ながらの作業が捗りますね。
 
