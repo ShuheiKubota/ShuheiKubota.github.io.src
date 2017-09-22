@@ -1,11 +1,12 @@
 baseURL = "/"
-languageCode = "ja-jp"
 title = "作ったものとか"
 
 hascjklanguage = true
 
 theme = "beg"
 googleAnalytics = "UA-105605213-1"
+
+copyright = "Copyright 2017 Shuhei Kubota"
 
 [taxonomies]
   #tag = "tags"
@@ -16,3 +17,16 @@ googleAnalytics = "UA-105605213-1"
   Content = true  # takes true or false
   # if both are set to true, summary is shown.
   # FooterMsg = "Copyright Me 2016. Powered by Hugo."
+
+#[[menu.main]]
+#    name = "about hugo"
+#    pre = "<i class='fa fa-heart'></i>"
+#    weight = -110
+#    identifier = "about"
+#    url = "/about/"
+#[[menu.main]]
+#    name = "getting started"
+#    pre = "<i class='fa fa-road'></i>"
+#    weight = -100
+#    url = "/getting-started/"
+#
