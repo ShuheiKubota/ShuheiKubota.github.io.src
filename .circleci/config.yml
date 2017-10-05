@@ -2,7 +2,8 @@ version: 2
 jobs:
   build:
     working_directory: ~/ShuheiKubota.github.io.src
-    machine: true
+    docker:
+      image: circleci/golang:latest
     steps:
       - checkout
       - run:
@@ -13,7 +14,40 @@ jobs:
           command: go get -v github.com/gohugoio/hugo 
       - run:
           name: generate syntax.css via hugo
-          command: mkdir static/css && hugo gen chromastyles --style=pastie > static/css/syntax.css
+          command: |
+            mkdir static/css
+            hugo gen chromastyles --style=pastie > static/css/syntax.css
       - run:
           name: build hugo
           command: hugo
+      - save_cache:
+          key: public
+          paths:
+            - ~/ShuheiKubota.github.io.src/public
+
+  deploy:
+    working_directory: ~/ShuheiKubota.github.io.src/public
+    docker:
+      image: circleci/golang:latest
+    steps:
+      - restore_cache:
+          keys:
+            - public
+      - run:
+          name: deploy 
+          command: |
+            git init
+            git config user.email "aaa@example.com"
+            git config user.name "CircleCI Job"
+            git add .
+            git commit -m "deploy from CircleCI"
+            git push -f "https://$GITHUB_TOKEN@github.com/ShuheiKubota.github.io.git" master:origin
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
