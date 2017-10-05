@@ -41,7 +41,7 @@ jobs:
             git config user.name "CircleCI Job"
             git add .
             git commit -m "deploy from CircleCI"
-            yes | git push -f git@github.com:ShuheiKubota/ShuheiKubota.github.io.git master
+            echo yes | git push -f git@github.com:ShuheiKubota/ShuheiKubota.github.io.git master
 
 workflows:
   version: 2
