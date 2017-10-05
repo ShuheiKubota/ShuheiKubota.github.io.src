@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/ShuheiKubota.github.io.src
     docker:
-      image: circleci/golang:latest
+      - image: circleci/golang:latest
     steps:
       - checkout
       - run:
@@ -28,7 +28,7 @@ jobs:
   deploy:
     working_directory: ~/ShuheiKubota.github.io.src/public
     docker:
-      image: circleci/golang:latest
+      - image: circleci/golang:latest
     steps:
       - restore_cache:
           keys:
