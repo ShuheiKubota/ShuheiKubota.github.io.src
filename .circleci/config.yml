@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/ShuheiKubota.github.io.src
+    machine: true
+    steps:
+      - checkout
+      - run:
+          name: fetch submodules
+          command: git submodule update --init --recursive 
+      - run:
+          name: install hugo
+          command: go get -v github.com/gohugoio/hugo 
+      - run:
+          name: generate syntax.css via hugo
+          command: hugo gen chromastyles --style=pastie > static/css/syntax.css
+      - run:
+          name: build hugo
+          command: hugo
