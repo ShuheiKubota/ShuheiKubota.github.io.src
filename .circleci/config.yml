@@ -13,7 +13,7 @@ jobs:
           command: go get -v github.com/gohugoio/hugo 
       - run:
           name: generate syntax.css via hugo
-          command: hugo gen chromastyles --style=pastie > static/css/syntax.css
+          command: mkdir static/css && hugo gen chromastyles --style=pastie > static/css/syntax.css
       - run:
           name: build hugo
           command: hugo
