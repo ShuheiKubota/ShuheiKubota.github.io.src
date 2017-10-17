@@ -8,6 +8,8 @@ googleAnalytics = "UA-105605213-1"
 
 copyright = "Copyright 2017 Shuhei Kubota"
 
+enableGitInfo = true
+
 [taxonomies]
   #tag = "tags"
   #category = "categories"
