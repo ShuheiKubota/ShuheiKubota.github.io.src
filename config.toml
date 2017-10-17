@@ -8,6 +8,13 @@ googleAnalytics = "UA-105605213-1"
 
 copyright = "Copyright 2017 Shuhei Kubota"
 
+#pygmentsUseClasses = true
+#pygmentsUseClassic = false
+pygmentsCodeFences = true
+pygmentsstyle = "pastie"
+pygmentsOptions = "linenos=true"
+#pygmentsOptions = "linenos=true, noclasses=true, style=pastie"
+
 enableGitInfo = true
 
 [taxonomies]
