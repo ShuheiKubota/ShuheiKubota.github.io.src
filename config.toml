@@ -3,7 +3,8 @@ title = "作ったものとか"
 
 hascjklanguage = true
 
-theme = "beg"
+theme = "cheep"
+#theme = "beg"
 googleAnalytics = "UA-105605213-1"
 
 copyright = "Copyright 2017 Shuhei Kubota"
@@ -26,6 +27,10 @@ enableGitInfo = true
   Content = true  # takes true or false
   # if both are set to true, summary is shown.
   # FooterMsg = "Copyright Me 2016. Powered by Hugo."
+
+  #profileImage = "profile.png"
+  profileTwitter = "chimatter"
+  #profileDescription = ""
 
 #[[menu.main]]
 #    name = "about hugo"
