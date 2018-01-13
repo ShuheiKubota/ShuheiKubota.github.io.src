@@ -1,4 +1,4 @@
-box: debian:sid-slim
+box: debian:latest
 build:
   steps:
     - install-packages:
