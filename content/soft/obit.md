@@ -9,8 +9,6 @@ date: 2018-03-18T16:00:00+09:00
 
 # 紹介
 
-
-
 ## ウィンドウやプロセスの終了を待つ
 
 コマンドライン引数にウィンドウタイトルやプロセス名を指定することで、対象のプロセスが終了したことを標準出力に出力します。
@@ -66,10 +64,17 @@ date: 2018-03-18T16:00:00+09:00
 
 Windows のみの配布です。
 
+* [obit_windows_amd64_0.3.1.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/obit_windows_amd64_0.3.1.zip)
+* [obit_windows_386_0.3.1.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/obit_windows_386_0.3.1.zip)
+
 * [obit_windows_amd64.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/obit_windows_amd64.zip)
 * [obit_windows_386.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/obit_windows_386.zip)
 
 # 更新履歴
+
+* 0.3.1 (2018-03-21)
+    * 内部的な変更。複数の対象を並列で監視する仕組みを若干変更。
+    * 現時点では、念の為に過去のバージョンも残しています。
 
 * 0.3.0 (2018-03-18)
     * 公開～諸々
