@@ -6,7 +6,7 @@ build:
     - script:
         name: update theme
         code: |
-            git submodule update --init --recursive
+            git submodule update --init --recursive --remote
     - arjen/hugo-build:
         version: "HEAD"
         flags: --buildDrafts=false -v
