@@ -5,7 +5,7 @@ date: 2019-10-26T17:38:54+09:00
 
 ShieldsIO を使ったバッジ作成を補助するツール
 
-<!-- more -->
+<!--more-->
 
 [shyield](/siteapp/shyield)
 
