@@ -35,7 +35,7 @@ jobs:
             - public
       - add_ssh_keys:
           fingerprints:
-            - "	f0:3d:21:1a:18:25:1a:0f:8e:3f:d8:85:73:ac:7c:cd"
+            - "6a:af:44:7e:43:9c:19:4e:93:1a:0f:b1:fc:ff:93:77"
       - run:
           name: deploy 
           command: |
