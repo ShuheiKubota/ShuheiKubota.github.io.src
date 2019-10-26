@@ -7,7 +7,7 @@ theme = "cheep"
 #theme = "beg"
 googleAnalytics = "UA-105605213-1"
 
-copyright = "Copyright 2017 Shuhei Kubota"
+copyright = "Copyright 2017-2019 Shuhei Kubota"
 
 #pygmentsUseClasses = true
 #pygmentsUseClassic = false
@@ -29,7 +29,8 @@ enableGitInfo = true
   # FooterMsg = "Copyright Me 2016. Powered by Hugo."
 
   #profileImage = "profile.png"
-  profileTwitter = "chimatter"
+  #profileTwitter = "chimatter"
+  profileHTML = "<object type='image/svg+xml' data='https://img.shields.io/badge/@chimatter-Follow-blue?style=for-the-badge&logo=twitter&logoColor=white&link=https://twitter.com/intent/user?screen_name=chimatter&link=https://twitter.com/intent/follow?screen_name=chimatter' style='margin-top:2em; margin-left:1em'></object>"
   #profileDescription = ""
 
 #[[menu.main]]
