@@ -23,25 +23,12 @@ enableGitInfo = true
   #category = "categories"
 
 [params]
-  Summary = true  # takes true or false
-  Content = true  # takes true or false
+  Summary = true
+  Content = true
   # if both are set to true, summary is shown.
-  # FooterMsg = "Copyright Me 2016. Powered by Hugo."
-
+  
   #profileImage = "profile.png"
   #profileTwitter = "chimatter"
   profileHTML = "<object type='image/svg+xml' data='https://img.shields.io/badge/@chimatter-Follow-blue?style=for-the-badge&logo=twitter&logoColor=white&link=https://twitter.com/intent/user?screen_name=chimatter&link=https://twitter.com/intent/follow?screen_name=chimatter' style='margin-top:2em; margin-left:1em'></object>"
   #profileDescription = ""
-
-#[[menu.main]]
-#    name = "about hugo"
-#    pre = "<i class='fa fa-heart'></i>"
-#    weight = -110
-#    identifier = "about"
-#    url = "/about/"
-#[[menu.main]]
-#    name = "getting started"
-#    pre = "<i class='fa fa-road'></i>"
-#    weight = -100
-#    url = "/getting-started/"
-#
+  
