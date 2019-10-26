@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: fetch submodules
-          command: git submodule update --init --recursive 
+          command: git submodule update --init --recursive --remote
       - run:
           name: install hugo
           command: go get -v github.com/gohugoio/hugo 
@@ -33,6 +33,9 @@ jobs:
       - restore_cache:
           keys:
             - public
+      - add_ssh_keys:
+          fingerprints:
+            - "5f:3c:94:0b:54:70:0a:f2:32:80:dc:83:04:58:c6:aa"
       - run:
           name: deploy 
           command: |
