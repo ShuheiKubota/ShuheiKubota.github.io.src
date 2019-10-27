@@ -19,3 +19,23 @@ jobs:
           name: pull publish repos
           command: |
             git clone git@github.com:ShuheiKubota/ShuheiKubota.github.io.git public
+      - run:
+          name: install hugo
+          command: go get -v github.com/gohugoio/hugo 
+      - run:
+          name: generate syntax.css via hugo
+          command: |
+            mkdir static/css
+            hugo gen chromastyles --style=pastie > static/css/syntax.css
+      - run:
+          name: run hugo
+          command: hugo --minify
+      - run:
+          name: publish
+          command: |
+            cd public
+            git config user.email "aaa@example.com"
+            git config user.name "CircleCI Job"
+            git add . --all --force
+            git commit -m "deploy from CircleCI"
+            echo yes | git push --force origin master
