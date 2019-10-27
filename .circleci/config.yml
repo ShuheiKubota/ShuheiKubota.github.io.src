@@ -3,8 +3,11 @@ jobs:
   build:
     working_directory: ~/ShuheiKubota.github.io.src
     docker:
-      - image: circleci/golang:latest
+      - image: cibuilds/hugo:latest
     steps:
+      - run:
+          name: apk
+          command: apk update && apk add git
       - add_ssh_keys:
           fingerprints:
             - "6a:af:44:7e:43:9c:19:4e:93:1a:0f:b1:fc:ff:93:77"
@@ -19,9 +22,6 @@ jobs:
           name: pull publish repos
           command: |
             git clone git@github.com:ShuheiKubota/ShuheiKubota.github.io.git public
-      - run:
-          name: install hugo
-          command: go get -v github.com/gohugoio/hugo 
       - run:
           name: generate syntax.css via hugo
           command: |
