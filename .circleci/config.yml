@@ -39,6 +39,7 @@ jobs:
       - run:
           name: deploy 
           command: |
+            echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
             git init
             git config user.email "aaa@example.com"
             git config user.name "CircleCI Job"
