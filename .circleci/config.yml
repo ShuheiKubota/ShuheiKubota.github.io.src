@@ -5,10 +5,20 @@ jobs:
     docker:
       - image: circleci/golang:latest
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "6a:af:44:7e:43:9c:19:4e:93:1a:0f:b1:fc:ff:93:77"
+      - run:
+          name: no yes typing on ssh
+          command: echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
       - checkout
       - run:
           name: fetch submodules
           command: git submodule update --init --recursive --remote
+      - run:
+          name: pull publish repos
+          command: |
+            git clone -f git@github.com:ShuheiKubota/ShuheiKubota.github.io.git public
       - run:
           name: install hugo
           command: go get -v github.com/gohugoio/hugo 
@@ -18,37 +28,14 @@ jobs:
             mkdir static/css
             hugo gen chromastyles --style=pastie > static/css/syntax.css
       - run:
-          name: build hugo
-          command: hugo
-      - save_cache:
-          key: public
-          paths:
-            - ~/ShuheiKubota.github.io.src/public
-
-  deploy:
-    working_directory: ~/ShuheiKubota.github.io.src/public
-    docker:
-      - image: circleci/golang:latest
-    steps:
-      - restore_cache:
-          keys:
-            - public
+          name: run hugo
+          command: hugo --minify
       - run:
-          name: deploy 
+          name: publish
           command: |
-            echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-            git init
+            cd public
             git config user.email "aaa@example.com"
             git config user.name "CircleCI Job"
-            git add .
+            git add . --all --force
             git commit -m "deploy from CircleCI"
-            echo yes | git push -f git@github.com:ShuheiKubota/ShuheiKubota.github.io.git master
-
-workflows:
-  version: 2
-  build_and_deploy:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
+            echo yes | git push --force origin master
