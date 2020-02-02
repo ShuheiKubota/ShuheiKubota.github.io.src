@@ -147,5 +147,5 @@ hosted --hosts=myhostsfile addなど ...
 
 Windows 版のみの配布です。
 
-<a href="https://github.com/shu-go/hosted/releases" target="_blank">ダウンロード</a>
+[ダウンロード](https://github.com/shu-go/hosted/releases)
 

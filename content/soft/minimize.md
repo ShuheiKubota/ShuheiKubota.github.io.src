@@ -38,7 +38,7 @@ minimize -r
 
 Windows 版のみの配布です。
 
-* [minimize_windows_386.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/minimize_windows_386.zip)
+[ダウンロード](https://github.com/shu-go/minimize/releases)
 
 # 更新履歴
 

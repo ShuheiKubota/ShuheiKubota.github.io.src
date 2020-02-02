@@ -64,13 +64,12 @@ date: 2018-03-18T16:00:00+09:00
 
 Windows のみの配布です。
 
-* [obit_windows_amd64_0.3.1.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/obit_windows_amd64_0.3.1.zip)
-* [obit_windows_386_0.3.1.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/obit_windows_386_0.3.1.zip)
-
-* [obit_windows_amd64.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/obit_windows_amd64.zip)
-* [obit_windows_386.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/obit_windows_386.zip)
+[ダウンロード](https://github.com/shu-go/obit/releases)
 
 # 更新履歴
+
+* 0.3.2 (2020-02-02)
+    * 内部的な変更。複数の対象を並列で監視する仕組みを若干変更。
 
 * 0.3.1 (2018-03-21)
     * 内部的な変更。複数の対象を並列で監視する仕組みを若干変更。

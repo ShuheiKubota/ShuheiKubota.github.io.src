@@ -121,8 +121,7 @@ glass.exe のショートカットを作成し、その「リンク先」を編�
 
 Windows のみの配布です。
 
-* [glass_windows_amd64.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/glass_windows_amd64.zip)
-* [glass_windows_386.zip](https://github.com/ShuheiKubota/ShuheiKubota.github.io/releases/download/site/glass_windows_386.zip)
+[ダウンロード](https://github.com/shu-go/glass/releases)
 
 # 更新履歴
 
