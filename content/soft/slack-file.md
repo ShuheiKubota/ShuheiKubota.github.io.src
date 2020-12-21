@@ -1,6 +1,6 @@
 ---
 title: "slack-file"
-date: 2020-12-15T00:00:00+09:00
+date: 2020-12-21T00:00:00+09:00
 ---
 
 Slackにアップされたファイルを操作するツール(主に削除)
@@ -157,6 +157,14 @@ Usage:
   slack-file uniq --key Name --sort -Timestamp --dry-run
   # DELETE
   slack-file uniq --key Name --sort -Timestamp
+```
+
+### ファイルをダウンロードする
+
+デフォルトでは、指定したファイル名に一致する最新のタイムスタンプのファイルがダウンロード対象になります。
+
+```
+> slack-file download my*.log > my_latest.log
 ```
 
 ## ダウンロード
